@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Invenst</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="invenst.css">
+  <script src="local.js"></script>
+</head>
+<body>
+    <div class="bg">
+    <div class="translucent pageform">
+      <div class="form">
+        <div class="max600">
+        <h1 class="panel-heading" style="color:black;text-align:left">Idea Bank Deposit Slip</h1>
+        <p>Contribute your idea to the Inve[n|s]tUB idea bank!  Please use the form below to describe your idea.  While many of the items are optional,
+        the more information you provide, the more likely someone is to be ready to make it happen!</p>
+        <h2>Tell us about yourself</h2>
+        <p>So we know who submitted the idea.  If you want to be contacted in the event that there is interest, please make sure to include a valid email address!</p>
+
+      <form action="ideabank.php" method="post">
+        <label for="name"><b>What is your name?</b></label>
+        <br>
+        <input type="text" id="name" name="name" size="100" >
+        <br>
+        <label for="email">What is your email address?</label>
+        <br>
+        <input type="text" name="email" size="100" >
+        <br>
+        <label for="relationship">What is your relationship to UB?</label>
+        <br><br>
+        <input type="radio" name="relationship" value="Student" checked> Student<br>
+        <input type="radio" name="relationship" value="Faculty">Faculty/Staff <br>
+        <input type="radio" name="relationship" value="Alumni"> Alumni<br>
+        <input type="radio" name="relationship" value="Other"> Other
+
+        <br>
+        <h2>Tell us about the idea!</h2>
+        <p>Your idea can be rough or polished, ready to roll or in need of some brainstorming - give us what you have, and we'll help see where we can go!</p>
+        <br>
+        <label for="idea">Describe it in a paragraph</label>
+        <br>
+        <textarea  name="idea" rows="5"></textarea>
+        <br>
+        <h2>Tell us what resources you think it might take.</h2>
+        <p>Is it a mobile app that will need an account to be released to the app store?  Is it a big data initiative that will need a database?  Is it a great new web app that will need hosting?  Is there data that will need to be acquired to make it go?
+
+What type of team will it take to get it rolling?  Do you need programmers?  Engineers?  Financial wizards or Medical mavens?</p>
+<br>
+<label for="succeed">What will the team need to succeed?</label>
+<br>
+<textarea  name="succeed" rows="5"></textarea>
+<br>
+
+<label for="team">What sort of team will it take?</label>
+<br>
+<textarea  name="team" rows="5"></textarea>
+<br>
+      <div style="text-align:right;">
+        <input type="submit">
+      </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

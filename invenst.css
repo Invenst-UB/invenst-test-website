@@ -1,0 +1,633 @@
+body, html {
+    height: 100%;
+    font: 16px 'Montserrat', Helvetica, sans-serif;
+    margin:0px;
+}
+
+:root {
+    --accent-color: #ad841f; /* Bronze Buffalo */
+    --accent-high: #ffc72c; /* Solar Strand */
+    --putnam-grey: #666666;
+    --ub-blue:#005bbb;
+}
+
+.jumbotron {
+  background-color:var(--ub-blue);
+  width:100%;
+  margin-top:-350px;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: medium;
+  border-color: white;
+}
+
+.scrollarrow{
+  width:50px;
+  height:40px;
+  margin-top:5px;
+}
+.ideaicon{
+  display: inline-block;
+}
+.ideabody{
+  margin-left:65px;
+  margin-top:-60px;
+}
+
+.tagline{
+  color:var(--accent-high);
+  margin-top:-10px;
+  #margin-left:190px;
+  padding-bottom:0px;
+  margin-bottom:0px;
+  font-size:40px;
+  font: 40px 'Nothing You Could Do', Helvetica, sans-serif;
+}
+.pitch{
+  margin-left:20px;
+  margin-top:20px;
+  background: linear-gradient(to bottom, #ff8000 ,#994d00 );
+  color:white;
+  border-radius: 10px;
+  width:90%;
+  padding:20px;
+}
+.tag{
+  display:inline-block;
+  background-color: goldenrod;
+  border-radius:5px;
+  padding: 5px;
+  margin:5px;
+
+  border:solid 1px goldenrod;
+}
+.pitchname{
+  font-size: 30px;
+}
+.pitchtitle{
+  font-weight: bold;
+}
+.script{
+  color:var(--accent-high);
+  margin-top:5px;
+  margin-left:0px;
+  padding-bottom:0px;
+  margin-bottom:0px;
+  font-size:40px;
+  font: 50px 'Nothing You Could Do', Helvetica, sans-serif;
+}
+ul{
+  list-style:none;
+  margin-left:-40px;
+}
+
+ul a:link{
+  color:white;
+}
+
+ul a:visited{
+  color:lightgray;
+}
+
+.gradient {
+
+  background-color:var(--ub-blue);
+  color:white;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: medium;
+  border-color: var(--accent-high);
+}
+
+.content{
+  position:absolute;
+  top:100%;
+  width:100%;
+}
+.navbar{
+  position: fixed;
+  top:0;
+  visibility: hidden;
+  min-height: 50px;
+  z-index: 1;
+  width:100%;
+  text-align: center;
+}
+.eventname{
+  width:50%;float:left;padding-right:20px;
+}
+.eventdesc{
+  width:50%;text-align:left;float:right;
+}
+.name{
+  color:lightgray;
+  font: 100 60px/1.2 'Robot Slab', Helvetica, sans-serif;
+  text-align: center;
+  padding:0;
+  margin-top:8px;
+  margin-bottom:0px;
+}
+.getstarted{
+  text-decoration: none;
+
+  background: goldenrod;
+    border: none;
+    width:200px;
+    color: white;
+    padding: 5px;
+    margin:3px;
+    margin-left:60%;
+    margin-top:30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:5px;
+
+}
+.headertext{
+  color:white;
+  font: 100 60px/1.2 'Roboto Slab', Helvetica, sans-serif;
+  text-align: left;
+  padding:0;
+  margin-top:14px;
+  margin-bottom:0px;
+}
+.logo{
+  float:left;
+  margin-top:6px;
+  max-width: 150px;
+    display: block;
+}
+
+
+
+.title{
+  color:black;
+  font-size:10px;
+  text-align: left;
+  margin-left:10px;
+}
+.titlelight{
+  color:lightgray;
+  font-size:10px;
+  text-align: left;
+  margin-left:10px;
+}
+.contact{
+      color:white;
+      padding:0;
+      margin-top:30px;
+      vertical-align: bottom;
+      text-align: center
+}
+
+.form h2 {
+    background-color: orange;
+    padding:5px;
+    border-radius: 5px;
+}
+
+.icon{
+
+  float:left;
+}
+.sectionbody{
+  text-align: left;
+  margin-left:0px;
+  padding-left:0px;
+}
+
+.panel-heading{
+
+  font:  30px 'Roboto Slab', Helvetica, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.panel-heading h4{
+  margin-top:0px;
+  margin-bottom:10px;
+}
+
+.panel{
+  margin-left:40px;
+  margin-right:40px;
+}
+.mainnav{
+    text-align: center;
+    margin-top:30px;
+}
+.mainnav li a {
+    text-decoration: none;
+
+
+    background-color:var(--accent-high);
+      border: none;
+      width:100px;
+      color: var(--putnam-grey) ;
+      padding: 5px;
+      margin:3px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius:5px;
+
+}
+.mainnav li a:hover {
+    background-color:var(--accent-color);
+      color: white;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    box-sizing:border-box;
+}
+
+@media only screen and (min-width: 600px) {
+.col-md-1{width:8.33%;}
+.col-md-2{width:16.66%;}
+.col-md-3{width:25%;}
+.col-md-4{width:33.33%;}
+.col-md-5{width:41.66%;}
+.col-md-6{width:50%;}
+.col-md-7{width:58.33%;}
+.col-md-8{width:66.66%;}
+.col-md-9{width:75%;}
+.col-md-10{width:83.33%;}
+.col-md-11{width:91.66%;}
+.col-md-12{width:100%;}
+}
+
+
+.name{
+  color:black;
+  font: 100 60px/1.2 'Robot Slab', Helvetica, sans-serif;
+  text-align: right;
+  padding:0;
+  margin-top:23px;
+  margin-bottom:0px;
+}
+
+.adjust-right{
+  margin-left:-15px;
+}
+.contact{
+      color:white;
+      padding:0;
+      margin-top:45px;
+      vertical-align: bottom;
+      text-align: left;
+}
+
+.contentrow{
+  background:white;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.contentrow2{
+  background-color:var(--ub-blue);
+  color:white;
+  padding-top:40px;
+  padding-bottom:40px;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: medium;
+  border-color: var(--accent-high);
+
+}
+
+.translucent {
+    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+}
+
+label{
+    display:inline-block;
+    margin-top:15px;
+    font-style: bold;
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 1px solid gray;
+}
+
+input[type=text]:focus {
+    outline:none;
+    border-bottom: 3px solid darkorange;
+
+}
+input[type=submit] {
+  background-color: orange;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top:15px;
+}
+textarea{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  outline:none;
+  border:none;
+  border-bottom: 1px solid gray;
+}
+textarea:focus{
+  border:1px solid orange;
+}
+
+.max600{
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height:100%;
+  width:90%;
+}
+
+.form{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding:20px;
+    padding-left:50px;
+    overflow:auto;
+      width: 90%;
+      height: 90%;
+}
+
+.pageform {
+border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+
+    width: 90%;
+    height: 90%;
+
+}
+
+.contentrow2 a:link {
+  color:var(--accent-high);
+}
+
+.contentrow2 a:visited {
+  color:lightgray;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+}
+
+
+[class*="col-"]{float:left;padding:15px;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row{width:100%;}
+
+
+
+h1,h3 {color:white;text-align:right;vertical-align: bottom}
+
+
+.promote {
+  border-width:medium;
+  border-color: white;
+  border-style:solid;
+  margin-top:-95px;
+}
+
+.logoback{
+  background-color:white;
+  border-radius:10px;
+}
+
+.circlecrop {
+  object-fit:cover;
+  border-radius:50%;
+  border-color:var(--accent-high);
+  border-style:solid;
+  border-width:2px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+  #width: 100px;
+  #margin-bottom:-100px;
+
+}
+.ideawrapper{
+  padding: 20px;
+  background: linear-gradient(to bottom, #ff8000 ,#994d00 );
+  border-radius: 5px;
+}
+.ideacard{
+  height:250px;
+  overflow:auto;
+  color: white;
+  #background-color: blue;
+
+
+  padding: 20px;
+}
+
+.navbutton {
+    text-decoration: none;
+
+
+    background-color: var(--accent-high);
+      border: none;
+      width:100px;
+        color: var(--putnam-grey) ;
+      padding: 5px;
+      margin:3px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius:5px;
+
+}
+.navbutton:hover {
+
+
+  background-color: var(--accent-color);
+  color:white;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+
+}
+
+.logocrop {
+  object-fit:cover;
+  border-radius:20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:auto;
+  width:100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("davis2.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('davis2.jpg');
+
+    /* Full height */
+    min-height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:-5px;
+    left:-5px;
+
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('davis2.jpg');
+
+    /* Full height */
+    min-height: 50px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url('stock.png');
+
+    /* Full height */
+    min-height: 100px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+
+.parallax4 {
+    /* The image used */
+    background-image: url('images4/transparent.JPG');
+
+    /* Full height */
+    min-height: 100px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+
+}
+
+
+.classyear{
+  display:inline-block !important;
+  text-decoration:none !important;
+  color:white !important;
+  border-style: none;
+  margin-right:40px !important;
+}
+
+.selected{
+    border-bottom: 5px;
+    border-top:0;
+    border-right:0;
+    border-left:0;
+    border-style:solid;
+}
+
+.bio p{
+  color: black;
+  text-align: left;
+  font-size: 16px;
+  font-weight: normal;
+}
+.bioheader {
+  color: black;
+  text-align: left;
+}
+.imgright{
+  text-align:right;
+  display:inline-block;
+}
